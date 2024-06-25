@@ -31,12 +31,13 @@ def browser_setting():
 
     browser.config.driver = driver
 
+    yield browser
+
     attach.add_html(browser)
     attach.add_screenshot(browser)
     attach.add_logs(browser)
     attach.add_video(browser)
 
-    yield
     browser.quit()
 
 
