@@ -20,4 +20,4 @@ def test_send_practice_form():
                 'NCR',
                 'Gurgaon'
                 )
-    page.open().register(user).check_registrated_user(user)
+    page.open().register(user).check_registered_user(user)
